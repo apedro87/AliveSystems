@@ -28,3 +28,14 @@ C:\Users\adria\Documents\GitHub\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debu
 C:\Users\adria\Documents\GitHub\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\AliveSystems.csproj.CoreCompileInputs.cache
 C:\Users\adria\Documents\GitHub\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\AliveSystems.exe
 C:\Users\adria\Documents\GitHub\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\AliveSystems.pdb
+C:\Users\adria\Documents\GitHub\AliveSystems\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\AliveSystems.exe.config
+C:\Users\adria\Documents\GitHub\AliveSystems\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\AliveSystems.exe
+C:\Users\adria\Documents\GitHub\AliveSystems\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\AliveSystems.pdb
+C:\Users\adria\Documents\GitHub\AliveSystems\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\AliveSystems.csproj.AssemblyReference.cache
+C:\Users\adria\Documents\GitHub\AliveSystems\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\AliveSystems.csproj.SuggestedBindingRedirects.cache
+C:\Users\adria\Documents\GitHub\AliveSystems\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\adria\Documents\GitHub\AliveSystems\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\AliveSystems.Properties.Resources.resources
+C:\Users\adria\Documents\GitHub\AliveSystems\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\AliveSystems.csproj.GenerateResource.cache
+C:\Users\adria\Documents\GitHub\AliveSystems\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\AliveSystems.csproj.CoreCompileInputs.cache
+C:\Users\adria\Documents\GitHub\AliveSystems\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\AliveSystems.exe
+C:\Users\adria\Documents\GitHub\AliveSystems\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\AliveSystems.pdb

@@ -50,7 +50,7 @@
             this.btnexecutar.Name = "btnexecutar";
             this.btnexecutar.Size = new System.Drawing.Size(116, 33);
             this.btnexecutar.TabIndex = 0;
-            this.btnexecutar.Text = "Executar";
+            this.btnexecutar.Text = "Start";
             this.btnexecutar.UseVisualStyleBackColor = true;
             this.btnexecutar.Click += new System.EventHandler(this.Executar_Click);
             // 
@@ -75,13 +75,13 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(88, 24);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Adicionar Linha";
+            this.button1.Text = "Add Field";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // txtHotel
             // 
-            this.txtHotel.Location = new System.Drawing.Point(57, 368);
+            this.txtHotel.Location = new System.Drawing.Point(71, 368);
             this.txtHotel.Margin = new System.Windows.Forms.Padding(2);
             this.txtHotel.Name = "txtHotel";
             this.txtHotel.Size = new System.Drawing.Size(76, 20);
@@ -89,7 +89,7 @@
             // 
             // txtdescricao
             // 
-            this.txtdescricao.Location = new System.Drawing.Point(57, 391);
+            this.txtdescricao.Location = new System.Drawing.Point(71, 390);
             this.txtdescricao.Margin = new System.Windows.Forms.Padding(2);
             this.txtdescricao.Name = "txtdescricao";
             this.txtdescricao.Size = new System.Drawing.Size(76, 20);
@@ -97,7 +97,7 @@
             // 
             // txtip
             // 
-            this.txtip.Location = new System.Drawing.Point(56, 414);
+            this.txtip.Location = new System.Drawing.Point(71, 414);
             this.txtip.Margin = new System.Windows.Forms.Padding(2);
             this.txtip.Name = "txtip";
             this.txtip.Size = new System.Drawing.Size(76, 20);
@@ -110,9 +110,9 @@
             this.label1.Location = new System.Drawing.Point(1, 371);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Hotel";
+            this.label1.Text = "Device";
             // 
             // label2
             // 
@@ -120,9 +120,9 @@
             this.label2.Location = new System.Drawing.Point(-1, 393);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.Size = new System.Drawing.Size(60, 13);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Descrição";
+            this.label2.Text = "Description";
             // 
             // label3
             // 
@@ -141,7 +141,7 @@
             this.btnParar.Name = "btnParar";
             this.btnParar.Size = new System.Drawing.Size(116, 33);
             this.btnParar.TabIndex = 9;
-            this.btnParar.Text = "Parar";
+            this.btnParar.Text = "Stop";
             this.btnParar.UseVisualStyleBackColor = true;
             this.btnParar.Click += new System.EventHandler(this.BtnParar_Click);
             // 
@@ -152,7 +152,7 @@
             this.btnRemoveLinha.Name = "btnRemoveLinha";
             this.btnRemoveLinha.Size = new System.Drawing.Size(99, 24);
             this.btnRemoveLinha.TabIndex = 10;
-            this.btnRemoveLinha.Text = "Remover Linha";
+            this.btnRemoveLinha.Text = "Remove Field";
             this.btnRemoveLinha.UseVisualStyleBackColor = true;
             this.btnRemoveLinha.Click += new System.EventHandler(this.BtnRemoveLinha_Click);
             // 
@@ -163,7 +163,7 @@
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(74, 36);
             this.btnsave.TabIndex = 11;
-            this.btnsave.Text = "Guardar";
+            this.btnsave.Text = "Save";
             this.btnsave.UseVisualStyleBackColor = true;
             this.btnsave.Click += new System.EventHandler(this.Btnsave_Click);
             // 
