@@ -1,2 +1,2 @@
 # AliveSystems
-C# App to check if network devices are pinging
+C# App to check if network devices are pinging (still development)
