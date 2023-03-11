@@ -31,7 +31,7 @@
             this.btnexecutar = new System.Windows.Forms.Button();
             this.lstviewdados = new System.Windows.Forms.ListView();
             this.button1 = new System.Windows.Forms.Button();
-            this.txtHotel = new System.Windows.Forms.TextBox();
+            this.txtDevice = new System.Windows.Forms.TextBox();
             this.txtdescricao = new System.Windows.Forms.TextBox();
             this.txtip = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,6 +41,7 @@
             this.btnRemoveLinha = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.PBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // btnexecutar
@@ -79,13 +80,13 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // txtHotel
+            // txtDevice
             // 
-            this.txtHotel.Location = new System.Drawing.Point(71, 368);
-            this.txtHotel.Margin = new System.Windows.Forms.Padding(2);
-            this.txtHotel.Name = "txtHotel";
-            this.txtHotel.Size = new System.Drawing.Size(76, 20);
-            this.txtHotel.TabIndex = 3;
+            this.txtDevice.Location = new System.Drawing.Point(71, 368);
+            this.txtDevice.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDevice.Name = "txtDevice";
+            this.txtDevice.Size = new System.Drawing.Size(76, 20);
+            this.txtDevice.TabIndex = 3;
             // 
             // txtdescricao
             // 
@@ -172,11 +173,20 @@
             this.backgroundWorker1.WorkerReportsProgress = true;
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             // 
+            // PBar1
+            // 
+            this.PBar1.Location = new System.Drawing.Point(415, 414);
+            this.PBar1.Name = "PBar1";
+            this.PBar1.Size = new System.Drawing.Size(201, 23);
+            this.PBar1.TabIndex = 12;
+            this.PBar1.Click += new System.EventHandler(this.progressBar1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(626, 445);
+            this.Controls.Add(this.PBar1);
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.btnRemoveLinha);
             this.Controls.Add(this.btnParar);
@@ -185,7 +195,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtip);
             this.Controls.Add(this.txtdescricao);
-            this.Controls.Add(this.txtHotel);
+            this.Controls.Add(this.txtDevice);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lstviewdados);
             this.Controls.Add(this.btnexecutar);
@@ -203,7 +213,7 @@
         private System.Windows.Forms.Button btnexecutar;
         private System.Windows.Forms.ListView lstviewdados;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtHotel;
+        private System.Windows.Forms.TextBox txtDevice;
         private System.Windows.Forms.TextBox txtdescricao;
         private System.Windows.Forms.TextBox txtip;
         private System.Windows.Forms.Label label1;
@@ -213,6 +223,7 @@
         private System.Windows.Forms.Button btnRemoveLinha;
         private System.Windows.Forms.Button btnsave;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.ProgressBar PBar1;
     }
 }
 

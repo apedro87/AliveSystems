@@ -14,6 +14,7 @@ using System.Net.Mail;
 using System.Threading;
 using System.Collections;
 using System.Collections.Specialized;
+using System.Text.RegularExpressions;
 
 namespace WindowsFormsApp1
 {
@@ -44,20 +45,63 @@ namespace WindowsFormsApp1
             Settings.Default.Save();
 
         }
-        
+
         private void Button1_Click(object sender, EventArgs e)
         {
-            if (txtip.Text != "")
+            Regex validateIP = new Regex("^(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$");
+            ListViewItem item = new ListViewItem(txtDevice.Text);
+            if (txtDevice.Text == "")
             {
-                
-                ListViewItem item = new ListViewItem(txtHotel.Text);
+                MessageBox.Show("Please fill the device",
+                                "Error",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error
+                );
+
+            }
+            else
+            {
                 item.SubItems.Add(txtdescricao.Text);
+            }
+            if (validateIP.IsMatch(txtip.Text))
+            {
                 item.SubItems.Add(txtip.Text);
+
+
+            }
+            else
+            {
+                MessageBox.Show("IP Malformed",
+                                "Error",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error
+            );
+            }
+            if (txtdescricao.Text == "")
+            {
+                MessageBox.Show("Please fill the description",
+                                "Error",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error
+                );
+
+            }
+            else
+            {
+                item.SubItems.Add(txtdescricao.Text);
+            }
+        
+
+
+
+            if (txtip.Text != "" && txtDevice.Text != "" && txtdescricao.Text != "")
+            {
                 lstviewdados.Items.Add(item);
-                txtHotel.Clear();
+                txtDevice.Clear();
                 txtdescricao.Clear();
                 txtip.Clear();
             }
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -112,10 +156,20 @@ namespace WindowsFormsApp1
             array1 = new int[contaLista];
             if (lstviewdados.Items.Count != 0)
             {
-
+                PBar1.Visible = true;
+                PBar1.BackColor = Color.Black;
+                // Set Minimum to 1 to represent the first file being copied.
+                PBar1.Minimum = 1;
+                // Set Maximum to the total number of files to copy.
+                PBar1.Maximum = array1.Length;
+                // Set the initial value of the ProgressBar.
+                PBar1.Value = 1;
+                // Set the Step property to a value of 1 to represent each file being copied.
+                PBar1.Step = 1;
                 pinger = new Ping();
                 for (int x = 0; x <= contaLista - 1; x++)
                 {
+                    
                     try
                     {
                         //MessageBox.Show(lstviewdados.Items[x].SubItems[2].Text);
@@ -150,12 +204,14 @@ namespace WindowsFormsApp1
 
                          SmtpServer.Send(mail); */
                     }
+                    PBar1.PerformStep();
                 }
+                
             }
-            if (!backgroundWorker1.IsBusy)
+           /* if (!backgroundWorker1.IsBusy)
             {
                 backgroundWorker1.RunWorkerAsync();
-            }
+            } */
          
 
         }
@@ -211,6 +267,11 @@ namespace WindowsFormsApp1
         }
 
         private void txtip_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
         {
 
         }
